@@ -1,0 +1,13 @@
+{
+  "name": "deallens-ai",
+  "version": "0.1.0",
+  "description": "MCP-powered account intelligence: two accounts, one live briefing, every number backed by evidence.",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.js",
+    "mcp:crm": "node mcp/crm-server.js"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

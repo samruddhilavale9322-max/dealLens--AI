@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealLens AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">◎</span> DealLens <b>AI</b><small>Two accounts. One live briefing.</small></div>
+  <div class="sync">
+    <span id="sync">Not synced</span>
+    <button id="refresh" class="ghost" disabled>↻ Refresh</button>
+    <button id="exp-md" class="ghost" disabled>Brief .md</button>
+    <button id="exp-json" class="ghost" disabled>Evidence .json</button>
+    <button id="print" class="ghost" disabled>Print</button>
+  </div>
+</header>
+
+<section class="picker">
+  <label>Account A <select id="selA"></select></label>
+  <label>Account B <select id="selB"></select></label>
+  <button id="go" class="primary">Generate briefing</button>
+  <p id="err" class="err" hidden></p>
+</section>
+
+<section id="compare" hidden></section>
+<main id="cols" class="cols"></main>
+
+<aside id="drawer" class="drawer" hidden>
+  <div class="drawer-head"><h2 id="d-title"></h2><button id="d-close" class="ghost">✕</button></div>
+  <div id="d-body"></div>
+</aside>
+<div id="scrim" class="scrim" hidden></div>
+<script src="app.js" type="module"></script>
+</body>
+</html>
